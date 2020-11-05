@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           make install
-          pip install --user poetry
+          pip install poetry
           poetry config virtualenvs.in-project true
       - name: Lint
         run: make lint
